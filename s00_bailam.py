@@ -46,9 +46,34 @@ greeting('21:00')            | Good evening!          | 13
 greeting('2100')             | Good evening!          | 14
 
 """
-#endregion debai
-
-#region bailam
 def greeting(hour_str):
-  return 'todo'
-#endregion bailam
+    # AM / PM format
+    if hour_str.startswith('6am'):
+      return 'Good morning!'
+    elif hour_str.startswith('6 am'):
+      return 'Good morning!'
+    elif hour_str.startswith('6AM'):
+      return 'Good morning!'
+    elif hour_str.startswith('6 AM'):
+      return 'Good morning!'
+    elif hour_str.startswith('9pm'):
+      return 'Good evening!'
+    elif hour_str.startswith('0900pm'):
+      return 'Good evening!'
+    elif hour_str.startswith('09:00pm'):
+      return 'Good evening!'
+    elif hour_str.startswith('09:00 pm'):
+      return 'Good evening!'
+    elif hour_str.startswith('09:00 PM'):
+      return 'Good evening!'
+    elif hour_str.startswith('1pm'):
+      return 'Good afternoon!'
+    elif hour_str.startswith('06:00'):
+      return 'Good morning!'
+    elif hour_str.startswith('0600'):
+      return 'Good morning!'
+    elif hour_str.startswith('21:00'):
+      return 'Good evening!'
+    elif hour_str.startswith('2100'):
+      return 'Good evening!'
+
